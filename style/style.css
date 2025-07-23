@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --primary-color: #4e47ff;
+  --secondary-color: #252432;
+  --paragraph-color: rgba(0, 0, 0, 0.5);
+}
+body {
+  background-color: #f6f8ff;
+}
+.container {
+  width: 100%;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 36px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #3b3ae6;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* header section starts here ---- */
+
+header {
+  height: 80vh;
+
+  background-image: url('../Assets/Hero-bg.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .navbar {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+header .navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar nav ul li a {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 2rem;
+}
+header .navbar nav ul li a span {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-family: 'Inter', sans-serif;
+}
+header .navbar .banner {
+  height: 70vh;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header .navbar .banner h1 {
+  font-size: 3rem;
+  width: 60%;
+}
+
+/* header section ends here ---- */
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* action section starts here ---- */
+main #action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 116px 0;
+}
+/* main #action .left-side {
+} */
+
+main #action .left-side h3 {
+  font-size: 42px;
+  margin-bottom: 23px;
+}
+
+main #action .left-side p {
+  margin-bottom: 23px;
+  width: 70%;
+  font-size: 24px;
+  color: var(--paragraph-color);
+}
+
+main #action .right-side {
+  height: 328px;
+  width: 403px;
+  border-radius: 48px;
+  background-image: url('../Assets/wc-mini.png');
+}
+
+/* action section ends here ---- */
+
+/* productive user section starts here ---- */
+
+main #productive-user {
+  background-color: rgba(77, 71, 255, 0.1);
+  text-align: center;
+  padding: 50px 80px;
+  margin-bottom: 116px;
+  border-radius: 24px;
+}
+
+main #productive-user h3 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+}
+
+main #productive-user .users-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main #productive-user .users-data .data h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+
+main #productive-user .users-data .data p {
+  font-size: 20px;
+}
+
+/* productive user section starts here ---- */
+/* users feedback section starts here ----- */
+main #users-feedback {
+  margin-bottom: 116px;
+}
+
+main #users-feedback .feedback span {
+  color: #ffb805;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+main #users-feedback .feedbacks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+main #users-feedback .feedback {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #f2eded;
+  border-radius: 14px;
+}
+
+main #users-feedback h3 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+}
+
+main #users-feedback p {
+  font-family: 'Inter', sans-serif;
+}
+main #users-feedback .feedback .feedback-text h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+main #users-feedback .feedback .feedback-text p {
+  font-size: 1rem;
+  margin: 12px 0;
+  color: var(--secondary-color);
+}
+
+main #users-feedback .feedback .user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main #users-feedback .feedback .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+main #users-feedback .feedback .user-info h5 {
+  font-size: 1rem;
+  color: rgb(146, 146, 146);
+}
+main #users-feedback .feedback .user-info p {
+  color: rgb(186, 186, 186);
+  font-size: 0.8rem;
+}
+
+/* users feedback section starts here ---- */
+
+/* ready to focus section starts here ---- */
+
+main #ready-to-focus {
+  padding: 71px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: #ffff;
+  border-radius: 14px;
+  margin-bottom: 116px;
+}
+
+main #ready-to-focus h1 {
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+main #ready-to-focus p {
+  color: var(--paragraph-color);
+}
+main #ready-to-focus .img {
+  background-image: url('../Assets/wc-big.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 365px;
+  border-radius: 48px;
+}
+/* ready to focus section ends here ---- */
+
+/* get in touch section starts here ---- */
+
+main #get-in-touch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: auto;
+  padding: 71px 0;
+}
+
+main #get-in-touch .left-side {
+  width: 50%;
+}
+
+main #get-in-touch .left-side h1 {
+  font-size: 6rem;
+}
+main #get-in-touch .right-side {
+  width: 500px;
+}
+.form-group input,
+textarea {
+  border-radius: 10px;
+  border: 1px solid #d6dded;
+  padding: 1.2rem 2rem;
+  width: 100%;
+}
+main #get-in-touch form .form-group {
+  margin-bottom: 20px;
+}
+
+main #get-in-touch form button {
+  width: 100%;
+}
+
+main #get-in-touch form .form-group label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+main #get-in-touch form .form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* get in touch section ends here ---- */
+
+/* footer section starts here ---- */
+
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 104px 0;
+  border-top: 1px solid #f2eded;
+}
+
+footer .footer-content {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .footer-content .logo a {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+footer .footer-content .logo a span {
+  color: var(--secondary-color);
+  font-size: 7rem;
+  font-family: 'Inter', sans-serif;
+}
+
+footer p {
+  color: var(--paragraph-color);
+}
+
+footer .links ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+footer .links ul li a {
+  color: #8987a1;
+}
+
+/* footer section ends here ---- */
